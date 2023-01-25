@@ -21,12 +21,6 @@ const countdown = function() {
 countdown();
 
 const options = {
-	// run in node directory to generate key and cert permissions
-	// openssl genrsa -out key.pem
-	// openssl req -new -key key.pem -out csr.pem
-	// openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
-	// rm csr.pem
-
 	key: fs.readFileSync('key.pem'),
 	cert: fs.readFileSync('cert.pem')
 };
